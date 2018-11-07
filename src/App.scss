@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat");
 @import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre");
-@import url("https://fonts.googleapis.com/css?family=Passion+One");
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush");
 
 .App {
-  background-color: #659dbd;
+  background-image:
+    radial-gradient(
+      to top right, 
+      #5a8daa, #a2c4d7
+    ); 
+  cursor: default;
   display: grid;
   height: 100vh;
   grid-template-columns: 4fr 1fr;
@@ -11,14 +16,39 @@
   text-align: center;
 
   .App-header {
-    background-color: #8d8741;
-    display: flex;
     grid-column: 1 / 3;
-    flex-direction: row;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: 'Passion One', cursive;
-    font-size: 1.5em;
+    justify-content: space-around;
+    font-family: 'Caveat Brush', cursive;
+
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-family: 'Caveat', cursive;  
+      font-size: 1.5em;
+      margin-bottom: 0;   
+    }
+  }
+
+  button {
+    background-color: #daad86;
+    border: solid 3px #bc986a;
+    border-radius: 25px;
+    box-shadow:
+      inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),
+      inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),
+      inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1em;
+
+    &:hover {
+      background-color: #c99f7a;
+      cursor: pointer;
+    }
   }
 
 }
