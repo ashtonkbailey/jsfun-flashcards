@@ -24,6 +24,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Design
 
-![wireframes]https://user-images.githubusercontent.com/35431767/48111920-218cd800-e211-11e8-962f-b7dd1eda7e64.jpg)
+<img width="581" alt="jsfunwireframe" src="https://user-images.githubusercontent.com/35431767/48112157-7aa93b80-e212-11e8-8a43-3a2b6b64da1c.png">
 
 <img width="1438" alt="flashcardgrab" src="https://user-images.githubusercontent.com/35431767/48112098-1e461c00-e212-11e8-858c-3965ac4d3056.png">
