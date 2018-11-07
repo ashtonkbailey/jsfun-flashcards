@@ -1,0 +1,22 @@
+.correct-box {
+  display: grid;
+  font-family: 'Averia Sans Libre', cursive;
+  grid-template-columns: 1fr 1fr;
+
+  .correct-div {
+    grid-column: 1 / 2;
+  }
+
+  .incorrect-div {
+    grid-column: 2 / 3;
+  }
+
+  .correct-div,
+  .incorrect-div {
+    background-color: #fbeec1;
+    border: solid 3px #daad86;
+    border-radius: 5px;
+    margin: auto;
+    width: 80%;
+  }
+}

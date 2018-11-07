@@ -1,0 +1,30 @@
+.cards {
+  display: grid;
+  font-family: 'Averia Sans Libre', cursive;
+  grid-column: 1 / 2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  height: 70vh;
+
+  h2 {
+    align-self: end;
+    grid-column: 1 / 3;
+    margin-bottom: 0;
+  }
+
+  .new-q-btn {
+    background-color: #daad86;
+    border: solid 3px #bc986a;
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1em;
+    grid-column: 1 / 3;
+    height: 50px;
+    margin: auto;
+    width: 150px;
+
+    &:hover {
+      background-color: #fbeec1;
+      cursor: pointer;
+    }
+  }
+}

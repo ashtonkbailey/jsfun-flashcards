@@ -1,0 +1,39 @@
+.completed-div {
+    display: grid;
+    font-family: 'Averia Sans Libre', cursive;
+    align-content: space-around;
+
+  .about-btn,
+  .clear-btn {
+    background-color: #daad86;
+    border: solid 3px #bc986a;
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1em;
+    margin: auto;
+    
+    &:hover {
+      background-color: #fbeec1;
+      cursor: pointer;
+    }
+  }
+
+  .about-btn {
+    height: 3em;
+    width: 6em;  
+  }
+
+  .clear-btn {
+    height: 4em;
+    width: 7em;
+  }
+
+  .completed-box {
+    background-color: #fbeec1;
+    border: solid 3px #daad86;
+    font-size: .8em;
+    margin: auto;
+    margin-top: 0;
+    width: 70%;
+  }
+
+}
