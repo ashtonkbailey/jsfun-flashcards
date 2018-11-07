@@ -11,12 +11,18 @@ export default class AnswerCard extends Component {
       
       answer = <li 
                 className="correct-guess"
-                >nice work! it is {this.props.correctAnswer}
+                >nice work! 
+                <p>it's {this.props.correctAnswer}.</p>
+                <p>get a new question.</p>
               </li>
 
     } else if (this.props.guessed) {
       
-      answer = <li>incorrect! get a new question</li>
+      answer = <li className="incorrect-guess"
+                 >incorrect! it's 
+                 <p>{this.props.correctAnswer}.</p> 
+                 <p>get a new question</p>
+               </li>
     
     } else {
     
@@ -29,7 +35,7 @@ export default class AnswerCard extends Component {
                 </li>
               )
             })
-      
+
     };
 
     return (
@@ -42,4 +48,3 @@ export default class AnswerCard extends Component {
     )
   }
 }
-        // <p>{this.props.correctAnswer}</p>

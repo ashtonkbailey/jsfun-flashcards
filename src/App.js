@@ -99,7 +99,9 @@ export default class App extends Component {
 
     this.setState({
       percentCompleted: complete,
-    })
+    });
+
+    localStorage.setItem('percentCompleted', JSON.stringify(complete))
   }
 
   updateGuessedRightAnswer = () => {
@@ -130,9 +132,17 @@ export default class App extends Component {
       var parsedIncorrect = JSON.parse(localStorage.getItem('incorrect'));
     };
 
+    if (localStorage.getItem('percentCompleted') === null) {
+      let completed = this.state.percentCompleted;
+      localStorage.setItem('percentCompleted', JSON.stringify(completed));
+    } else {
+      var parsedCompleted = JSON.parse(localStorage.getItem('percentCompleted'));
+    }
+
     this.setState({
       correctList: parsedCorrect,
-      incorrectList: parsedIncorrect
+      incorrectList: parsedIncorrect,
+      percentCompleted: parsedCompleted
     })
   }
 
@@ -157,7 +167,15 @@ export default class App extends Component {
     return (
       <div className="App" >
         <header className="App-header" >
+          <div className="header-left" >
+            <p>scope</p>
+            <p>prototypes</p>
+          </div>
           <h1>JSFun Trivia</h1>
+          <div className="header-right" >
+            <p>ES6</p>
+            <p>context</p>
+          </div>
         </header>
         <Cards 
           checkAnswer={this.checkAnswer}

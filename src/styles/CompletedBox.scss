@@ -5,16 +5,7 @@
 
   .about-btn,
   .clear-btn {
-    background-color: #daad86;
-    border: solid 3px #bc986a;
-    font-family: 'Averia Sans Libre', cursive;
-    font-size: 1em;
     margin: auto;
-    
-    &:hover {
-      background-color: #fbeec1;
-      cursor: pointer;
-    }
   }
 
   .about-btn {
@@ -23,6 +14,7 @@
   }
 
   .clear-btn {
+    border-radius: 30px;
     height: 4em;
     width: 7em;
   }
